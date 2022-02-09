@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/Zaika/static/css/main.2772f593.chunk.css",
+    "main.js": "/Zaika/static/js/main.e04afce4.chunk.js",
+    "main.js.map": "/Zaika/static/js/main.e04afce4.chunk.js.map",
+    "runtime-main.js": "/Zaika/static/js/runtime-main.580f1c55.js",
+    "runtime-main.js.map": "/Zaika/static/js/runtime-main.580f1c55.js.map",
+    "static/js/2.116b1429.chunk.js": "/Zaika/static/js/2.116b1429.chunk.js",
+    "static/js/2.116b1429.chunk.js.map": "/Zaika/static/js/2.116b1429.chunk.js.map",
+    "index.html": "/Zaika/index.html",
+    "static/css/main.2772f593.chunk.css.map": "/Zaika/static/css/main.2772f593.chunk.css.map",
+    "static/js/2.116b1429.chunk.js.LICENSE.txt": "/Zaika/static/js/2.116b1429.chunk.js.LICENSE.txt",
+    "static/media/banner.75527149.png": "/Zaika/static/media/banner.75527149.png",
+    "static/media/logo.bda6e975.png": "/Zaika/static/media/logo.bda6e975.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.580f1c55.js",
+    "static/js/2.116b1429.chunk.js",
+    "static/css/main.2772f593.chunk.css",
+    "static/js/main.e04afce4.chunk.js"
+  ]
+}
