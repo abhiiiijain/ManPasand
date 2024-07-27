@@ -1,17 +1,17 @@
-import React from 'react';
-import { connect } from 'react-redux';
-import { createStructuredSelector } from 'reselect';
+import React from "react";
+import { connect } from "react-redux";
+import { createStructuredSelector } from "reselect";
 import {
   cartAddItem,
   cartRemoveItem,
-} from '../../../../redux/cart/cart.action';
+} from "../../../../redux/cart/cart.action";
 import {
   selectCartItems,
   selectCartItemsCount,
-} from '../../../../redux/cart/cart.selector';
+} from "../../../../redux/cart/cart.selector";
 
-import ButtonAddRemoveItem from '../../ButtonAddRemoveItem';
-import './styles.css';
+import ButtonAddRemoveItem from "../../ButtonAddRemoveItem";
+import "./styles.css";
 
 const MenuItem = ({
   item,
@@ -20,7 +20,7 @@ const MenuItem = ({
   cartAddItem,
   cartRemoveItem,
 }) => {
-  const { id, img, name, price, info, size} = item;
+  const { id, img, name, price, info, size } = item;
 
   const handleQuantity = () => {
     let quantity = 0;
@@ -34,23 +34,22 @@ const MenuItem = ({
   };
 
   return (
-    <div className='item'>
-      <img src={img} alt='food' />
-      <div className='item-head_desc'>
-        <p className='head_desc-name'>{name}</p>
-        <p className='head_desc-info'>
-        <p className='head_desc-size'>{size}</p>
+    <div className="item">
+      <img src={img} alt="food" />
+      <div className="item-head_desc">
+        <p className="head_desc-name">{name}</p>
+        <p className="head_desc-info">
+          <p className="head_desc-size">{size}</p>
           <small>{info}</small>
         </p>
       </div>
-      <div className='item-foot_desc'>
-        <span className='foot_desc-price'>${price}</span>
+      <div className="item-foot_desc">
+        <span className="foot_desc-price">${price}</span>
         <ButtonAddRemoveItem
           quantity={handleQuantity()}
           handleRemoveItem={() => cartRemoveItem(item)}
           handleAddItem={() => cartAddItem(item)}
         />
-        
       </div>
     </div>
   );
